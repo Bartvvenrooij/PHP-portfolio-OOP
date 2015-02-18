@@ -1,0 +1,378 @@
+/* --------------- CSS RESET --------------- */
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed,
+figure, figcaption, footer, header, hgroup,
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+    margin: 0;
+    padding: 0;
+    border: 0;
+    font-size: 100%;
+    font: inherit;
+    vertical-align: baseline;
+}
+
+article, aside, details, figcaption, figure,
+footer, header, hgroup, menu, nav, section {
+    display: block;
+}
+
+body {
+    line-height: 1;
+}
+
+ol, ul {
+    list-style: none;
+}
+
+blockquote, q {
+    quotes: none;
+}
+
+blockquote:before, blockquote:after,
+q:before, q:after {
+    content: '';
+    content: none;
+}
+
+table {
+    border-collapse: collapse;
+    border-spacing: 0;
+}
+
+/* --------------- BODY --------------- */
+body {
+    background-color: darkgray;
+}
+
+.clear {
+    clear: both;
+}
+
+.errors {
+    font-size: 12px;
+    color: red;
+}
+
+/* --------------- HEADER --------------- */
+header {
+    background-color: #2d2d2d;
+    padding: 10px 20px 0 20px;
+    min-width: 650px;
+}
+
+header h1 {
+    text-align: center;
+    color: #ffffff;
+    font-size: 18px;
+    font-weight: bold;
+}
+
+header nav {
+    margin: 0 auto;
+    width: 70%;
+    min-width: 650px;
+}
+
+header nav ul {
+    display: inline-table;
+}
+
+header nav ul li {
+    float: left;
+    margin-bottom: -3px;
+}
+
+header nav ul li a {
+    display: block;
+    width: 100px;
+    height: 25px;
+    text-decoration: none;
+    background-color: #ffffff;
+    color: black;
+    text-align: center;
+    line-height: 25px;
+    border-bottom: 3px dotted #2d2d2d;
+}
+
+header nav ul > li:first-child a {
+    border-radius: 7px 0 0 0;
+}
+
+header nav ul > li:last-child a {
+    border-radius: 0 7px 0 0;
+}
+
+header nav ul li a:hover {
+    color: #ffffff;
+    background: #2d2d2d;
+}
+
+.header_img {
+    display: block;
+    width: 200px;
+    border: none;
+    background-color: #2d2d2d;
+}
+
+.header_img img {
+    float: left;
+    width: 200px;
+}
+
+/* --------------- MAIN --------------- */
+div[role="main"], footer {
+    background-color: white;
+    width: 70%;
+    min-width: 650px;
+    margin: 0 auto;
+    padding: 20px;
+}
+
+div[role="main"] {
+    border-radius: 7px 7px 0 0;
+    min-height: 300px;
+}
+
+.content {
+    width: 66%;
+}
+
+.content section {
+    background-color: #dddddd;
+    border-radius: 2px;
+    margin-top: 20px;
+    padding: 10px;
+    box-shadow: 1px 1px 5px 0 black;
+}
+
+.content section h1 {
+    margin-bottom: 10px;
+}
+
+.content section:last-child {
+    padding-bottom: 10px;
+}
+
+.content section h2 {
+    padding-top: 0;
+    font-size: 15px;
+    font-family: Arial, Helvetica, sans-serif;
+    text-decoration: underline;
+    font-weight: bold;
+}
+
+.content section h3 {
+    margin-top: 10px;
+    font-size: 13px;
+    font-family: Arial, Helvetica, sans-serif;
+    font-weight: bold;
+}
+
+.size1 {
+    width: 21.5%;
+    float: left;
+}
+
+.size2 {
+    margin: 0 2px;
+    width: 46.1%;
+    float: left;
+}
+
+.size3 {
+    width: 71.5%;
+    float: left;
+}
+
+.content h1 {
+    font-weight: bold;
+    border-bottom: 1px solid gray;
+}
+
+.register {
+    text-align: center;
+}
+
+.register input,
+.change input {
+    margin: 0 auto;
+    display: block;
+
+    width: 200px;
+}
+
+.register input,
+.register select {
+    margin-top: 10px;
+}
+
+.register #submit {
+    width: 100px;
+}
+
+.contact input {
+    display: block;
+    margin-top: 10px;
+}
+
+.contact input:nth-child(1),
+.contact input:nth-child(2) {
+    width: 30%;
+}
+
+.contact input:nth-child(3) {
+    width: 70%;
+}
+
+.contact textarea {
+    width: 99%;
+    resize: none;
+    margin-top: 10px;
+}
+
+.contact-pre {
+    font-size: 15px;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+aside {
+    float: right;
+    min-width: 25%;
+}
+
+.widget {
+    border-left: 1px dashed dimgray;
+    padding: 20px;
+    margin-top: 20px;
+
+}
+
+.widget h1 {
+    font-weight: bold;
+    border-bottom: 1px solid gray;
+}
+
+.widget input {
+    display: block;
+    margin-top: 10px;
+}
+
+.widget #submit {
+    float: left;
+}
+
+.widget a {
+    float: left;
+    margin-top: 10px;
+    margin-left: 10px;
+    color: #000000;
+}
+
+section nav {
+    text-align: center;
+}
+
+section nav ul {
+    display: inline-table;
+}
+
+section nav ul li {
+    float: left;
+}
+
+section nav ul li a, section a {
+    margin: 0 10px;
+    color: black;
+}
+
+section nav ul li a:hover {
+    text-decoration: none;
+}
+
+.column {
+    -webkit-columns: 40px 2;
+    -moz-columns: 40px 2;
+    columns: 40px 2;
+}
+
+.comment textarea {
+    width: 99%;
+    resize: none;
+}
+
+.comment article {
+    background-color: #ffffff;
+    border: 1px solid gray;
+    border-radius: 5px;
+    margin-bottom: 10px;
+}
+
+.comment article p:first-child,
+.comment article p:nth-child(4) {
+    margin-bottom: 10px;
+}
+
+.admin a {
+    float: right;
+    margin-left: 10px;
+    color: black;
+}
+
+.admin a:first-child {
+    float: left;
+}
+
+.banned {
+    font-weight: bold;
+}
+
+.user-info a {
+    float: right;
+    color: black;
+}
+
+/* --------------- FOOTER --------------- */
+footer {
+    border-top: 1px dashed gray;
+    border-radius: 0 0 7px 7px;
+    text-align: center;
+    margin-bottom: 30px;
+}
+
+footer nav ul {
+    display: inline-table;
+    margin: 0 10px 0 10px;
+}
+
+footer nav ul li a {
+    color: cornflowerblue;
+}
+
+footer nav ul:nth-child(2) li {
+    display: inline;
+}
+
+footer nav ul:nth-child(2) li a {
+    margin: 0 5px 0 5px;
+}
+
+.widget nav ul li a img {
+    width: 30px;
+    border-radius: 7px;
+    opacity: 0.8;
+}
+
+.widget nav ul li img:hover {
+    box-shadow: 1px 1px 3px 1px black;
+    opacity: 1;
+
+}
